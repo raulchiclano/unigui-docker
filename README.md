@@ -14,8 +14,9 @@ Ver [documentación oficial](http://www.unigui.com/doc/online_help/compling--run
 ### Ajustes previos dentro del contendor
 ##### Instalamos librerias necesarias:
 `sudo apt-get install zlib1g-dev`
+
 ##### Exportamos el PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu
+`export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu`
 
 ### Ajuste desde DELPHI:
 1. Tools > Options > SDK Manager > Linux 64-bit > Update Local File Cache
@@ -25,4 +26,14 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu
 UniRoot:    /opt/
 ExtRoot:    /opt/
 ```
+3. Target Platforms
+Añadimos Linux 64-bit
+Añadimos *New SDK*
+```
+IP: Ip de la maquina
+Puerto: el que definimos en el docker: por defecto 64211
+Password: Definida en la variable PA_SERVER_PASSWOR. Por defecto, 1532
+
+```
+
 ### Conexión desde Delphi
